@@ -1,0 +1,39 @@
+#navbar{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background: lighten(#000, 20%);
+  border-top: 4px solid $primary;
+  box-shadow: 2px 0 2px black;
+  overflow-y: scroll;
+
+  header{
+    margin-left: 5%;
+    font-size: $lg;
+    padding-top: 8%;
+    color: black;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 9%;
+    a{
+      text-decoration: none;
+      li{
+        color: grey;
+        border-bottom: 2px solid grey !important;
+        box-shadow: 0 1px 1px darken(#330000, 5%) !important;
+        list-style-type: none;
+        padding-top: 10%;
+        padding-left: 4%;
+        box-sizing: border-box;
+        font-size: $md;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+
+  }
+}

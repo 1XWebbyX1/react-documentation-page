@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Source+Serif+Pro');
+
+
+body{
+  background: white;
+  font-family: 'Fira Sans', serif;
+}
+
+
+#menu{
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 0;
+  padding: 4%;
+  font-size: $md;
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+//hide scrollbar for chrome and safari--------
+::-webkit-scrollbar {
+    display: none;
+}

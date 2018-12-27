@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px) {
+  body #navbar{
+    width: 0%;
+    background: rgba(0, 0, 0, 0.8);
+    header{
+      font-size: $md;
+      background: $primary;
+    }
+    a{
+      font-size: $sm;
+    }
+  }
+
+  body #main-doc{
+    margin-left: 0;
+    width: 100%;
+    header{
+      font-size: 2.2em;
+    }
+
+    section{
+      margin: 5%;
+      header{
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  body #menu{
+    visibility: visible;
+  }
+}
