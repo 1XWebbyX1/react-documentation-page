@@ -34,7 +34,7 @@ class Wrapper extends React.Component{
       }
 
       if(this.state.displayDoc){
-        $('#navbar').css('width', '35%');
+        $('#navbar').css('width', '40%');
       }else{
         $('#navbar').css('width', '0%'); //hide the menu
       }

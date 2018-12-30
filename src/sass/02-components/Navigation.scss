@@ -38,6 +38,9 @@
         padding-left: 4%;
         box-sizing: border-box;
         font-size: $md;
+        @include phone-tab-media{
+          padding-right: 4%!important;
+        }
         &:hover {
           color: $primary;
         }
