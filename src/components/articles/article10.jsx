@@ -31,11 +31,11 @@ class Jsx extends React.Component{
     In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({'{ ... }'}') . In general, it's good practice to always use block statements, especially when nesting if statements:
 
     <code>{`if (condition) {
-    statement_1_runs_if_condition_is_true;
-    statement_2_runs_if_condition_is_true;
+    statement_1_runs;
+    statement_2_runs;
     } else {
-    statement_3_runs_if_condition_is_false;
-    statement_4_runs_if_condition_is_false;
+    statement_3_runs;
+    statement_4_runs;
     }`}</code>
     It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
     <code>{`if (x = y) {
