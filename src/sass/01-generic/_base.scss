@@ -3,7 +3,6 @@
 
 body{
   background: white;
-  font-family: 'Fira Sans', serif;
 }
 
 
@@ -16,8 +15,10 @@ body{
   font-size: $md;
   opacity: 1;
   transition: all 500ms ease;
+  @include phone-tab-media{
+    display: inline-block;
+  }
 }
-
 //hide scrollbar for chrome and safari--------
 ::-webkit-scrollbar {
     display: none;

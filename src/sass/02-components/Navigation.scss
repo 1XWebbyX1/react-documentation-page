@@ -1,3 +1,4 @@
+
 #navbar{
   position: fixed;
   width: 20%;
@@ -6,12 +7,20 @@
   border-top: 4px solid $primary;
   box-shadow: 2px 0 2px black;
   overflow-y: scroll;
+  @include phone-tab-media{
+    width: 0%;
+    background: rgba(0, 0, 0, 0.8);
+  }
 
   header{
     margin-left: 5%;
     font-size: $lg;
     padding-top: 8%;
     color: black;
+    @include phone-tab-media{
+      font-size: $md;
+      background: $primary;
+    }
   }
 
   ul{
@@ -34,6 +43,5 @@
         }
       }
     }
-
   }
 }

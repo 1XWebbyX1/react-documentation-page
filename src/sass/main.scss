@@ -2,9 +2,10 @@
 
 
 
-  // 0. Settings - global vars declaration
+  // 0. Settings - global vars and mixins declaration
   @import
-    '00-settings/_vars';
+    '00-settings/_vars',
+    '00-settings/_mixins';
 
     // 1. Generic – reset and/or normalize styles
     @import
@@ -22,7 +23,3 @@
   // 3. Utilities– utilities and helper classes with ability to override anything
 @import
     '03-utilities/_animation';
-
-// 4. Tools – media-queries for responsive design
-@import
-    '04-tools/_media-queries';

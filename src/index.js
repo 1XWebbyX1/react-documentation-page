@@ -11,23 +11,33 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //jQuery for animations_______________________________________________
 
-var section = $('.main-section'), //all sections
-    nav = $('#navbar');            //navigation bar
+  var  nav = $('#navbar');            //navigation bar
 
 
 //to toggle class activeon scroll(highlight the current section)-------------------
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop(); //current position of scroll
-
+  var offset = 400;
+  var x = window.matchMedia("(min-height: 950px)");
+  var y = window.matchMedia("(max-width: 820px) and (min-height: 1200px)");
+   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 400) {
+       if (x.matches) { // If media query matches
+           offset = 1000;
+         if(y.matches){
+            offset = 1200;
+           }
+       }else{
+         offset = 800;
+      }
+    }
 
   //to check which section is in view-----------------------------
-  section.each(function() {
-    var top = $(this).offset().top -400,
+  $('.main-section').each(function() {
+    var top = $(this).offset().top - offset,
         bottom = top + $(this).outerHeight();
 
     if (cur_pos >= top && cur_pos <= bottom) {
       nav.find('li').removeClass('active');
-      section.removeClass('active'); // remove previous active section
       //trigger active on current section-------------
       nav.find('a[href="#'+$(this).attr('id')+'"]').find('li').addClass('active');
     }

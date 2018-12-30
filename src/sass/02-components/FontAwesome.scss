@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  i{
-    margin: 0 auto;
+  @include phone-tab-media{
+    visibility: visible;
   }
 }

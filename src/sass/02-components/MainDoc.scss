@@ -3,29 +3,47 @@
   margin-top: 0;
   width: 80%;
   height: 100%;
+  @include phone-tab-media{
+     margin-left: 0;
+     width: 100%;
+  }
 
  > header{
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 2.5em;
     padding: 4%;
     border-top: 4px solid $primary;
     border-left: 4px solid black;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 1) inset;
+    @include phone-tab-media{
+      font-size: 2.2em;
+    }
   }
 
   section{
     margin: 4%;
+    @include phone-tab-media{
+      margin: 5%;
+    }
     >header{
       border-bottom: 2px solid $primary;
       font-size: $lg;
       font-weight: bold;
       padding-left: 1%;
+      @include phone-tab-media{
+        font-size: 1.6em;
+      }
     }
     >article{
       padding: 2%;
+      font-size: $md;
+      >p{
+        font-weight: 400;
+        padding: 5px;
+      }
       >code{
         display: block;
-        padding: 2%;
+        padding: 3%;
+        color: #e60099;
         background: darken($color, 10%);
         border-left: 4px solid #3F51B5;
       }
