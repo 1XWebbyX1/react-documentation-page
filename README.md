@@ -18,7 +18,7 @@ Project is created with :
 
 # Inspiration
 
-This Project was inspired by  suggested  user stories  at [freeCodeCamp](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
+This Project was inspired by(not entirely based on)  suggested  user stories  at [freeCodeCamp](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page).
 
 # Reference
 
