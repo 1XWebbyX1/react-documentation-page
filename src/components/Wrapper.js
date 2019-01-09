@@ -49,9 +49,11 @@ class Wrapper extends React.Component{
   render(){
     return(
       <div>
+        <div id='flex-wrap'>
+         <Navigation />
+         <MainDoc />
+        </div>
         <FontAwesomeIcon id='menu' icon={this.state.menu} onClick={this.handleClick} />
-        <Navigation />
-        <MainDoc />
       </div>
     )
   }

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import $ from 'jquery'
 import App from './App';
+import 'babel-polyfill';
 import './sass/03-utilities/_animation.scss'
 
 
@@ -18,18 +19,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop(); //current position of scroll
   var offset = 400;
-  var x = window.matchMedia("(min-height: 950px)");
-  var y = window.matchMedia("(max-width: 820px) and (min-height: 1200px)");
-   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 400) {
-       if (x.matches) { // If media query matches
-           offset = 1000;
-         if(y.matches){
-            offset = 1200;
-           }
-       }else{
-         offset = 800;
-      }
-    }
+ 
 
   //to check which section is in view-----------------------------
   $('.main-section').each(function() {

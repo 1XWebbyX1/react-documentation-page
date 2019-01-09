@@ -1,10 +1,14 @@
+#flex-wrap{
+  display: flex;
+  justify-content: flex-start;
+}
+
 #main-doc{
-  margin-left: 20%;
-  margin-top: 0;
-  width: 80%;
+  position: absolute;
+  left: 20%;
   height: 100%;
   @include phone-tab-media{
-     margin-left: 0;
+     left: 0;
      width: 100%;
   }
 
